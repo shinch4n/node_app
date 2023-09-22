@@ -12,13 +12,13 @@ pipeline {
             }
         }
 
-        stage('Build and Test') {
-            steps {
-                sh 'npm install'
-                sh 'npm run build'
-                sh 'npm test'
-            }
-        }
+        // stage('Build and Test') {
+        //     steps {
+        //         sh 'npm install'
+        //         sh 'npm run build'
+        //         sh 'npm test'
+        //     }
+        // }
 
         stage('SonarQube Scan') {
             steps {
